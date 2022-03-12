@@ -3,16 +3,7 @@ import { createSlice, configureStore } from "@reduxjs/toolkit"
 const todoListSlice = createSlice({
     name: "todoList",
     initialState: [
-        // {
-        //     id: "",
-        //     done: false,
-        //     text: "",
-        // },
-        {
-            id: 0,
-            done: false,
-            text: "la première est de continuer l'appli",
-        },
+        // on initialise le state avec un tableau vide car pour l'instant on a aucune tâche
     ],
     reducers: {
         addTaskToList: (state, action) => {
@@ -25,7 +16,7 @@ const todoListSlice = createSlice({
         },
         toggleTask: (state, action) => {
             const task = state.find((t) => t.id === action.payload)
-            return (task.done = !task.done)
+            task.done = !task.done
         },
         deleteTask: (state, action) => {
             state = state.filter((t) => t.id !== action.payload)

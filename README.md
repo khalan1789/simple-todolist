@@ -1,6 +1,10 @@
-<h2> Simple todoList </h2>
+<h1> Simple todoList </h1>
 
-It's just a little training project to learn how to use redux tool kit in a simply apllication.
+It's just a little training project to learn how to use redux tool kit in a simply application.
+
+You have a todoList and you can check, delete an existing task or a new.
+
+I used react create app, react-redux and redux/toolkit.
 
 You can use it if you want, but think first it's a training project :)
 

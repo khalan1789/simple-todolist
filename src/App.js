@@ -4,20 +4,20 @@ import TaskForm from "./components/taskForm"
 import TaskList from "./components/taskList"
 import { Provider } from "react-redux"
 import { store } from "./redux/redux"
+import Presentation from "./components/Presentation"
 
 function App() {
     return (
         <div className="App">
             <Provider store={store}>
-                <section>
-                    <header className="App-header">
-                        <TaskRemaining />
-                    </header>
+                <header className="App-header">
+                    <Presentation />
+                </header>
+                <div className="container">
+                    <TaskRemaining />
                     <TaskList />
-                    <footer>
-                        <TaskForm />
-                    </footer>
-                </section>
+                    <TaskForm />
+                </div>
             </Provider>
         </div>
     )

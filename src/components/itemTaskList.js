@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { toggleTask, deleteTask } from "../redux/redux"
 
 export default function ItemTaskList(props) {
+    // on récupère la tâche passée en props
     const { task } = props
 
     const dispatch = useDispatch()
@@ -11,8 +12,8 @@ export default function ItemTaskList(props) {
         <div className="task-item">
             <input
                 type="checkbox"
-                value={task.done}
-                onClick={() => dispatch(toggleTask(task.id))}
+                checked={task.done}
+                onChange={() => dispatch(toggleTask(task.id))}
             />
             <p>{task.text}</p>
             <span onClick={() => dispatch(deleteTask(task.id))}>X</span>
