@@ -1,3 +1,9 @@
+<h2> Simple todoList </h2>
+
+It's just a little training project to learn how to use redux tool kit in a simply apllication.
+
+You can use it if you want, but think first it's a training project :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
